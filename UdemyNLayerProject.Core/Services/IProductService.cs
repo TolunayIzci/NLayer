@@ -6,7 +6,7 @@ using UdemyNLayerProject.Core.Models;
 
 namespace UdemyNLayerProject.Core.Services
 {
-    public interface IProductService
+    public interface IProductService:IService<Product>
     {
         Task<Product> GetWithCategoryByIdAsync(int productId);
 

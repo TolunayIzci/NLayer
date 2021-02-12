@@ -6,10 +6,10 @@ using UdemyNLayerProject.Core.Repositories;
 
 namespace UdemyNLayerProject.Core.UnitOfWorks
 {
-    interface IUnitOfWork
+    public interface IUnitOfWork
     {
         IProductRepository Products { get; }
-        ICategoryRepository categoryies { set; }
+        ICategoryRepository Categoryies { get; }
 
         Task CommitAsync();
 
