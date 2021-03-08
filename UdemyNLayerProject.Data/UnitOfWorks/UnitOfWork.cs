@@ -25,7 +25,7 @@ namespace UdemyNLayerProject.Data.UnitOfWorks
 
         public void Commit()
         {  
-            _context.SaveChanges();
+           _context.SaveChanges();
         }
 
         public async Task CommitAsync()
