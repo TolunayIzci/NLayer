@@ -1,0 +1,24 @@
+﻿@model UdemyNLayerProject.Web.DTOs.CategoryDto
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Kategori ekle</h1>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="custom-control-label">Kategori ismi</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Ekle" class="btn-primary" />
+            </div>
+
+        </form>
+    </div>
+</div>

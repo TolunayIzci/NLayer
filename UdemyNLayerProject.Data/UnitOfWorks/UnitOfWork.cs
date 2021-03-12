@@ -22,7 +22,9 @@ namespace UdemyNLayerProject.Data.UnitOfWorks
 
         public ICategoryRepository Categoryies => _categoryRepository = _categoryRepository ?? new CategoryRepository(_context);
 
-
+        /// <summary>
+        /// //////////////
+        /// </summary>
         public void Commit()
         {  
            _context.SaveChanges();
